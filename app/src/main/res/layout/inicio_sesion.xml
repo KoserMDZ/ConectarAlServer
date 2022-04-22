@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="User"
+        app:boxStrokeColor="@color/white"
+        app:boxBackgroundColor="@color/biometric_error_color"
+        app:counterEnabled="true"
+        app:hintTextColor="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxBackgroundColor="@color/biometric_error_color"
+        app:boxStrokeColor="@color/white"
+        android:id="@+id/passwd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:counterEnabled="true"
+        android:textColorHint="@color/white"
+        app:endIconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:hintTextColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/user">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwdtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:backgroundTint="@color/biometric_error_color"
+            android:id="@+id/seguir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Siguiente"
+            android:layout_gravity="center"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
